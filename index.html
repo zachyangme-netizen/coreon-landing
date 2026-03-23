@@ -134,9 +134,8 @@
         </div>
 
         <div id="form-container">
-            <form onsubmit="event.preventDefault(); document.getElementById('success').style.display='block'; document.getElementById('form-container').style.display='none';">
-
-                <input type="email" placeholder="Enter your email" required />
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="setTimeout(function(){ document.getElementById('success').style.display='block'; document.getElementById('form-container').style.display='none'; }, 300);">
+                <input type="email" name="email" placeholder="Enter your email" required />
                 <button type="submit">Get early access</button>
             </form>
         </div>
@@ -145,12 +144,12 @@
             You're in. We’ll be in touch soon.
         </div>
 
-        <div class="small">No spam. Unsubscribe anytime.</div>
+        <div class="small">We’ll only use your email for Coreon early access updates
 
-        <div class="credibility">
-            Built by runners who solved this problem for themselves.
+            <div class="credibility">
+                Built by runners who solved this problem for themselves.
+            </div>
         </div>
-    </div>
 </body>
 
 </html>
